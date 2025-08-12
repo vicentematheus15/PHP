@@ -15,6 +15,12 @@ public/* linguist-vendored
 *.json linguist-vendored
 *.lock linguist-vendored
 
+database/factories/* linguist-vendored
+database/seeders/* linguist-vendored
+tests/* linguist-vendored
+config/* linguist-vendored
+bootstrap/cache/* linguist-vendored
+
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
