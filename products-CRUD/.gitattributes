@@ -1,17 +1,17 @@
 * text=auto eol=lf
 
-*.blade.php diff=html
+*.blade.php linguist-language=PHP
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
+
 vendor/* linguist-vendored
 node_modules/* linguist-vendored
-public/* linguist-vendored
-resources/js/* linguist-vendored
-resources/css/* linguist-vendored
 storage/* linguist-vendored
+public/* linguist-vendored
 .env linguist-vendored
+*.env.example linguist-vendored
 *.json linguist-vendored
 *.lock linguist-vendored
 
