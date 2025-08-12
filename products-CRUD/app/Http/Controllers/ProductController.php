@@ -31,10 +31,10 @@ class ProductController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'price' => 'required|numeric|min:0',
+            'price' => 'required|numeric|min:0.01',
             'description' => 'nullable|string',
         ], [
-        'price.min' => 'O preço não pode ser negativo. Por favor, insira um valor maior ou igual a zero.',
+        'price.min' => 'O preço não pode ser negativo. Por favor, insira um valor maior que zero.',
         'price.required' => 'O campo "preço" é obrigatório.',
         'price.numeric' => 'O preço deve ser um número válido.',
         'name.required' => 'O campo "nome" é obrigatório.',
